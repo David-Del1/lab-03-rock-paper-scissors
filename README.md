@@ -7,3 +7,15 @@
 5) Is there some state we need to initialize?
 6) Find all the 'events' (user clicks, form submit, etc) in your app. Ask one by one, "What happens when" for each of these events.
 7) Think about how to validate each of your steps
+
+
+# My Plan
+
+- Create a Rock, Papers, Scissors game
+    - How? 
+        1. Have a way for user to pick choice.
+        2. Have a button to submit data
+        3. listen for button-click and have computer generate random choice on click
+        4. Compare the results
+        5. Display relevant message 
+        6. update score

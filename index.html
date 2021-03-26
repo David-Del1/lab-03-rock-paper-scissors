@@ -9,43 +9,72 @@
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
+
+    <!-- Google Fonts link -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Fontdiner+Swanky&family=Permanent+Marker&family=Shojumaru&family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
+    <title>Rock, Paper, Scissors</title>
 </head>
 
 <body>
-    <header>
-        <div class="gutter-right logo">
-            <img src="assets/big-logo.png"/>
+
+    <div class="scoreboard">
+        <div>You:<span id="wins"> 0</span></div>
+        <div>Forky:<span id="losses"> 0</span></div>
+        <div>Draws:<span id="draws"> 0</span></div>
+        <div id="announcement"></div>
+    </div>
+
+    <button id="reset">Reset</button>
+
+    <main class="main">
+        <h1>RPS Battle!</h1>
+
+        <h2 class="caption">A Battle for the Ages...</h2>
+
+        <div class="container">
+            <h2>The Calamitous Forky!</h2>
+            <img src="./assets/PngItem_494943.png">
         </div>
-    </header>
-    <main>
-        <section class="main-section">
-            <img class="main-logo" src="assets/alchemy-logo.png"/>
-            <h2>
-                Welcome to Alchemy Bootstrap!
-            </h2>
 
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
-            <hr />
-            <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam repellendus similique consectetur voluptas facilis molestiae voluptates nobis error sapiente, ad, ipsa vero non, sint eligendi? Eos praesentium iusto magnam exercitationem.
-                Earum sunt voluptatibus molestias, sint voluptatum quos reiciendis. Id asperiores deleniti dolores provident, eius, nostrum aperiam vel, optio qui illo corrupti in. Eum quam, est nemo porro sapiente excepturi assumenda.
-                Rerum unde quidem maxime. Ullam, dolores labore molestias voluptatibus adipisci quod? Quaerat nihil inventore molestiae assumenda, voluptates vel necessitatibus eligendi? Accusamus ratione eligendi reprehenderit? Beatae incidunt molestias ea soluta nulla.
-                Fugiat quae soluta voluptate mollitia praesentium modi ex illo, autem assumenda, vel aliquam fugit possimus dolorem esse corporis ipsa! Voluptatem sapiente error non, ea optio suscipit quasi maxime nobis ex?
-                Et ipsa tenetur ullam ab nesciunt quas fugit velit impedit illum esse eligendi corporis culpa praesentium aspernatur ex sint veniam quidem, doloribus corrupti hic vitae. Eum neque ducimus omnis exercitationem?
-            </p>
+        <div class="versus-container">
+            <h3>Vs.</h3>
+        </div>
 
-        </section>
+        <div class="user-container">
+            <h2>You!</h2>
+        </div>
+
+        <div class="choose-wisely-text">
+            <h2>Choose Wisely...</h2>
+        </div>
+
+        <div class="choices-container">
+            <label>
+                <input type="radio" name="RPS" value="rock" id="">
+                <img src="./assets/rock.png">
+            </label>
+            <label>
+                <input type="radio" name="RPS" value="paper" id="">
+                <img src="./assets/paper.png">
+            </label>
+            <label>
+                <input type="radio" name="RPS" value="scissors" id="">
+                <img src="./assets/scissors.png">
+            </label>
+
+           
+            
+        </div>
+
+        <div class="btn-container">
+             <button id="submitButton">Submit</button>
+        </div>
+
+        
+
     </main>
-    <footer>
-        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
-    </footer>
+    
 
     <script type="module" src="app.js"></script>
 </body>
