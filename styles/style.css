@@ -111,6 +111,11 @@ h3 {
     font-family: 'Permanent Marker', cursive;
 }
 
+.choose-wisely-text .rules {
+    font-size: 1.5rem;
+    color: #ED1C24;
+}
+
 .choices-container {
     display: flex;
     justify-content: space-between;
